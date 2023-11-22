@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light text-black">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+          <h5 class="text-center mb-4">Something Went Wrong</h5>
+          <p class="text-center">An unexpected error occurred.</p>
+          <p class="text-center" th:text="${'Error code: ' + statusCode}">404</p>
+      <div class="text-center">
+          <a href="/bicycles" class="btn btn-primary">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
